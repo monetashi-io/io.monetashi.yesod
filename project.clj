@@ -1,6 +1,8 @@
-(defproject io.monetashi.yesod "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+(defproject io.monetashi.yesod "0.1.0"
+  :description "Foundational recurring themes"
+  :url "https://monetashi.io"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.8.0"]])
+  :dependencies [[org.clojure/clojurescript "1.10.520"]
+                 [org.clojure/core.async "0.4.490"]
+                 [com.taoensso/timbre "4.10.0"]])

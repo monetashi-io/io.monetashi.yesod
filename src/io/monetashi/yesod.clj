@@ -1,6 +1,14 @@
 (ns io.monetashi.yesod)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defmacro let-returning
+  "Helper for the pattern of executing native js async which
+  has to return the channel at the end"
+  [bindings & body]
+  {:pre [(vector? bindings)
+         (= (count bindings) 2)
+         (symbol? (first bindings))]}
+  (if (= (count bindings) 0)
+    `(do ~@body)
+    `(let ~bindings
+       (do ~@body)
+       ~(bindings 0))))
