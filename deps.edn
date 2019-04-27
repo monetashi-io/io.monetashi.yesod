@@ -7,12 +7,4 @@
         com.taoensso/timbre {:mvn/version "4.10.0"}
         funcool/promesa {:mvn/version "2.0.1"}
         }
-
- ;; https://github.com/slipset/deps-deploy
- :aliases
- {:deploy {:extra-deps {deps-deploy {:mvn/version "0.0.9"}}
-           :main-opts ["-m" "deps-deploy.deps-deploy" "deploy" "target/yesod.jar"]}
-  :pack {:extra-deps {pack/pack.alpha {:git/url "https://github.com/juxt/pack.alpha.git"
-                                       :sha "d9023b24c3d589ba6ebc66c5a25c0826ed28ead5"}}
-         :main-opts ["-m"]}}
  }
