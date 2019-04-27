@@ -4,7 +4,7 @@
   <groupId>io.monetashi</groupId>
   <artifactId>yesod</artifactId>
   <version>0.1.1-SNAPSHOT</version>
-  <name>io.monetashi.yesod</name>
+  <name>io.monetashi/yesod</name>
   <dependencies>
     <dependency>
       <groupId>org.clojure</groupId>
